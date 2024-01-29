@@ -13,6 +13,12 @@ body {
    padding: 3em;
 }
 
+button{
+   cursor: pointer;
+   border: 1px solid transparent;
+   border-radius: 0.2rem;
+}
+
 #calc {
    width: 400px;
    padding: 0.5em;
@@ -47,6 +53,13 @@ body {
    overflow-wrap: break-word;
 }
 
+#change-btn {
+   font-size: 1.2em;
+   padding: 0.2rem;
+   outline: none;
+   margin-bottom: 0.2rem;
+}
+
 #buttons-container {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
@@ -54,27 +67,21 @@ body {
 }
 
 #buttons-container button {
-   border: 1px solid transparent;
-   border-radius: 0;
    height: 4em;
    font-size: 1.2em;
-   background-color: #dbdbdb;
-   cursor: pointer;
+   background-color: #f3f3f3
 }
 
-#buttons-container .number {
-   background-color: #f3f3f3;
-}
 
 #buttons-container button:hover {
    background-color: #bababa;
    border-color: #999;
 }
 
-#buttons-container #bin-btn {
+#buttons-container #res-btn {
    grid-column: span 2;
    background-color: #75a5cb;
 }
-#buttons-container #bin-btn:hover {
+#buttons-container #res-btn:hover {
    background-color: #3a91d8;
 }
